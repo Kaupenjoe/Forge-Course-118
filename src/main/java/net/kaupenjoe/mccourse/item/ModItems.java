@@ -1,6 +1,7 @@
 package net.kaupenjoe.mccourse.item;
 
 import net.kaupenjoe.mccourse.MCCourseMod;
+import net.kaupenjoe.mccourse.item.custom.CoalSliverItem;
 import net.kaupenjoe.mccourse.item.custom.DowsingRodItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -23,6 +24,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register("dowsing_rod",
             () -> new DowsingRodItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).durability(16)));
+
+    public static final RegistryObject<Item> COAL_SLIVER = ITEMS.register("coal_sliver",
+            () -> new CoalSliverItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
 
 
