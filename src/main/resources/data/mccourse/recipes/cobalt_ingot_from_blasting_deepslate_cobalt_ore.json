@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "mccourse:deepslate_cobalt_ore"
+  },
+  "result": "mccourse:cobalt_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}
