@@ -16,6 +16,9 @@
   "block.mccourse.cobalt_slab": "Cobalt Slab",
   "block.mccourse.cobalt_button": "Cobalt Button",
   "block.mccourse.cobalt_pressure_plate": "Cobalt Pressure Plate",
+  "block.mccourse.cobalt_fence": "Cobalt Fence",
+  "block.mccourse.cobalt_fence_gate": "Cobalt Fence Gate",
+  "block.mccourse.cobalt_wall": "Cobalt Wall",
 
   "itemGroup.coursemodtab": "MCCourse Mod",
 
