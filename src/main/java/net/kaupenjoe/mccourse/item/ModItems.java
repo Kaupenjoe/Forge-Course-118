@@ -5,6 +5,7 @@ import net.kaupenjoe.mccourse.item.custom.CoalSliverItem;
 import net.kaupenjoe.mccourse.item.custom.DowsingRodItem;
 import net.kaupenjoe.mccourse.item.custom.LevitationSwordItem;
 import net.kaupenjoe.mccourse.item.custom.PaxelItem;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -50,6 +51,19 @@ public class ModItems {
 
     public static final RegistryObject<Item> COBALT_PAXEL = ITEMS.register("cobalt_paxel",
             () -> new PaxelItem(ModTiers.COBALT, 0, 0f,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> COBALT_HELMET = ITEMS.register("cobalt_helmet",
+            () -> new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+    public static final RegistryObject<Item> COBALT_CHESTPLATE = ITEMS.register("cobalt_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+    public static final RegistryObject<Item> COBALT_LEGGINGS = ITEMS.register("cobalt_leggings",
+            () -> new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+    public static final RegistryObject<Item> COBALT_BOOTS = ITEMS.register("cobalt_boots",
+            () -> new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
 
