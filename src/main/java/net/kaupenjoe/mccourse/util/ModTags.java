@@ -12,6 +12,8 @@ public class ModTags {
     public static class Blocks {
         public static final Tags.IOptionalNamedTag<Block> DOWSING_ROD_VALUABLES =
                 tag("dowsing_rod_valuables");
+        public static final Tags.IOptionalNamedTag<Block> PAXEL_MINEABLE =
+                tag("mineable/paxel");
 
         private static Tags.IOptionalNamedTag<Block> tag(String name) {
             return BlockTags.createOptional(new ResourceLocation(MCCourseMod.MOD_ID, name));
