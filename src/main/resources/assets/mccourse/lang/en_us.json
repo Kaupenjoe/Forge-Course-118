@@ -15,5 +15,8 @@
 
   "itemGroup.coursemodtab": "MCCourse Mod",
 
-  "item.mccourse.dowsing_rod.no_valuables": "No Valuables Found!"
+  "item.mccourse.dowsing_rod.no_valuables": "No Valuables Found!",
+  "tooltip.mccourse.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
+  "tooltip.mccourse.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.block.speedy_block": "It gets REALLY speedy!"
 }
