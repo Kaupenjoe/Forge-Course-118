@@ -2,6 +2,7 @@ package net.kaupenjoe.mccourse;
 
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.ModItems;
+import net.kaupenjoe.mccourse.util.ModTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
