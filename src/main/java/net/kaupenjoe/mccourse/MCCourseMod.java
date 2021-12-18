@@ -1,6 +1,7 @@
 package net.kaupenjoe.mccourse;
 
 import net.kaupenjoe.mccourse.block.ModBlocks;
+import net.kaupenjoe.mccourse.enchantment.ModEnchantments;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.kaupenjoe.mccourse.util.ModTags;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -38,6 +39,8 @@ public class MCCourseMod {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+
+        ModEnchantments.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
