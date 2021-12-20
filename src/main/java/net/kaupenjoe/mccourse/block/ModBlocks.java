@@ -6,6 +6,7 @@ import net.kaupenjoe.mccourse.block.custom.SpeedyBlock;
 import net.kaupenjoe.mccourse.block.custom.TurnipCropBlock;
 import net.kaupenjoe.mccourse.item.ModCreativeModeTab;
 import net.kaupenjoe.mccourse.item.ModItems;
+import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffects;
@@ -81,7 +82,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COBALT_LAMP = registerBlock("cobalt_lamp",
             () -> new CobaltLampBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(2f).requiresCorrectToolForDrops()
+                    .strength(2f).requiresCorrectToolForDrops().sound(ModSounds.COBALT_LAMP_SOUNDS)
                     .lightLevel((state) -> state.getValue(CobaltLampBlock.CLICKED) ? 15 : 0)),
             ModCreativeModeTab.COURSE_TAB);
 
