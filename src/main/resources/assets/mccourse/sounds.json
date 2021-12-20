@@ -1,0 +1,8 @@
+{
+  "dowsing_rod_found_ore": {
+    "subtitle": "sounds.mccourse.dowsing_rod_found_ore",
+    "sounds": [
+      "mccourse:dowsing_rod_found_ore"
+    ]
+  }
+}
