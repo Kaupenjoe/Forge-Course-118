@@ -19,6 +19,8 @@
   "item.mccourse.cobalt_horse_armor": "Cobalt Horse Armor",
   "item.mccourse.data_tablet": "Data Tablet",
 
+  "item.mccourse.turnip_seeds": "Turnip Seeds",
+
   "block.mccourse.cobalt_block": "Cobalt Block",
   "block.mccourse.cobalt_ore": "Cobalt Ore",
   "block.mccourse.raw_cobalt_block": "Raw Cobalt Block",
@@ -34,6 +36,7 @@
   "block.mccourse.cherry_blossom_door": "Cherry Blossom Door",
   "block.mccourse.cherry_blossom_trapdoor": "Cherry Blossom Trapdoor",
   "block.mccourse.cobalt_lamp": "Cobalt Lamp",
+  "block.mccourse.turnip_crop": "Turnip Crop",
 
   "itemGroup.coursemodtab": "MCCourse Mod",
 

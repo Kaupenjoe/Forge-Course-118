@@ -3,6 +3,7 @@ package net.kaupenjoe.mccourse.block;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.custom.CobaltLampBlock;
 import net.kaupenjoe.mccourse.block.custom.SpeedyBlock;
+import net.kaupenjoe.mccourse.block.custom.TurnipCropBlock;
 import net.kaupenjoe.mccourse.item.ModCreativeModeTab;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -82,6 +83,11 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops()
                     .lightLevel((state) -> state.getValue(CobaltLampBlock.CLICKED) ? 15 : 0)),
             ModCreativeModeTab.COURSE_TAB);
+
+
+    public static final RegistryObject<Block> TURNIP_CROP = BLOCKS.register("turnip_crop",
+            () -> new TurnipCropBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)
+                    .noCollission().noOcclusion()));
 
 
 
