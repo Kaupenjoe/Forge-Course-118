@@ -1,6 +1,7 @@
 package net.kaupenjoe.mccourse.block;
 
 import net.kaupenjoe.mccourse.MCCourseMod;
+import net.kaupenjoe.mccourse.block.custom.CobaltLampBlock;
 import net.kaupenjoe.mccourse.block.custom.SpeedyBlock;
 import net.kaupenjoe.mccourse.item.ModCreativeModeTab;
 import net.kaupenjoe.mccourse.item.ModItems;
@@ -75,6 +76,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHERRY_BLOSSOM_TRAPDOOR = registerBlock("cherry_blossom_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
+
+    public static final RegistryObject<Block> COBALT_LAMP = registerBlock("cobalt_lamp",
+            () -> new CobaltLampBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .lightLevel((state) -> state.getValue(CobaltLampBlock.CLICKED) ? 15 : 0)),
+            ModCreativeModeTab.COURSE_TAB);
 
 
 
