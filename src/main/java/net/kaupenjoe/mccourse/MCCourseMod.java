@@ -3,6 +3,7 @@ package net.kaupenjoe.mccourse;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.enchantment.ModEnchantments;
 import net.kaupenjoe.mccourse.item.ModItems;
+import net.kaupenjoe.mccourse.painting.ModPaintings;
 import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.kaupenjoe.mccourse.util.ModItemProperties;
 import net.kaupenjoe.mccourse.util.ModTags;
@@ -46,6 +47,8 @@ public class MCCourseMod {
 
         ModEnchantments.register(eventBus);
         ModSounds.register(eventBus);
+        ModPaintings.register(eventBus);
+
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
