@@ -2,5 +2,13 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "mccourse:item/data_tablet_off"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "mccourse:on": 1
+      },
+      "model": "mccourse:item/data_tablet_on"
+    }
+  ]
 }
