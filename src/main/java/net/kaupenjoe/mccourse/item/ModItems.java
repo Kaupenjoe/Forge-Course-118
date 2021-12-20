@@ -86,6 +86,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1)));
 
 
+    public static final RegistryObject<Item> COBALT_BOW = ITEMS.register("cobalt_bow",
+            () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).durability(500)));
+
+
 
 
 
