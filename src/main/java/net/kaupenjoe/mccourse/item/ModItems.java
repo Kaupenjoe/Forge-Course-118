@@ -3,6 +3,7 @@ package net.kaupenjoe.mccourse.item;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.custom.*;
+import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -76,6 +77,10 @@ public class ModItems {
     public static final RegistryObject<Item> TURNIP_SEEDS = ITEMS.register("turnip_seeds",
             () -> new ItemNameBlockItem(ModBlocks.TURNIP_CROP.get(),
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> BAR_BRAWL_RECORD = ITEMS.register("bar_brawl_music_disc",
+            () -> new RecordItem(4, ModSounds.BAR_BRAWL,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1)));
 
 
 

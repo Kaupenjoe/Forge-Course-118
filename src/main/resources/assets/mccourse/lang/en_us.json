@@ -21,6 +21,9 @@
 
   "item.mccourse.turnip_seeds": "Turnip Seeds",
 
+  "item.mccourse.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.mccourse.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
   "block.mccourse.cobalt_block": "Cobalt Block",
   "block.mccourse.cobalt_ore": "Cobalt Ore",
   "block.mccourse.raw_cobalt_block": "Raw Cobalt Block",
