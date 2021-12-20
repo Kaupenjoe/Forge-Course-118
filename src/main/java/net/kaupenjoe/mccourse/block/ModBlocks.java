@@ -8,6 +8,7 @@ import net.kaupenjoe.mccourse.item.ModCreativeModeTab;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -89,6 +90,10 @@ public class ModBlocks {
             () -> new TurnipCropBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)
                     .noCollission().noOcclusion()));
 
+
+    public static final RegistryObject<Block> PINK_ROSE = registerBlock("pink_rose",
+            () -> new FlowerBlock(MobEffects.BLINDNESS, 4,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.COURSE_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
