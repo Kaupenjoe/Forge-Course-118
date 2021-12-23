@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mccourse:cherry_blossom_log",
+    "mccourse:cherry_blossom_wood",
+    "mccourse:stripped_cherry_blossom_log",
+    "mccourse:stripped_cherry_blossom_wood"
+  ]
+}
