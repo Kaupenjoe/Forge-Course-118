@@ -31,6 +31,15 @@ public class CobaltBlasterScreen extends AbstractContainerScreen<CobaltBlasterMe
         int y = (height - imageHeight) / 2;
 
         this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
+
+        if(menu.isCrafting()) {
+            blit(pPoseStack, x + 84, y + 22, 176, 14, menu.getScaledProgress(), 36);
+        }
+
+        if(menu.hasFuel()) {
+            blit(pPoseStack, x + 18, y + 33 + 14 - menu.getScaledFuelProgress(), 176,
+                    14 - menu.getScaledFuelProgress(), 14, menu.getScaledFuelProgress());
+        }
     }
 
     @Override

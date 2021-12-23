@@ -1,0 +1,14 @@
+{
+  "type": "mccourse:cobalt_blasting",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_pickaxe"
+    },
+    {
+      "item": "mccourse:cobalt_ingot"
+    }
+  ],
+  "output": {
+    "item": "mccourse:cobalt_pickaxe"
+  }
+}
