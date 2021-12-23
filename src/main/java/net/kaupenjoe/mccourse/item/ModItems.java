@@ -2,6 +2,7 @@ package net.kaupenjoe.mccourse.item;
 
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
+import net.kaupenjoe.mccourse.fluid.ModFluids;
 import net.kaupenjoe.mccourse.item.custom.*;
 import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -88,6 +89,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> COBALT_BOW = ITEMS.register("cobalt_bow",
             () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).durability(500)));
+
+
+    public static final RegistryObject<Item> HONEY_BUCKET = ITEMS.register("honey_bucket",
+            () -> new BucketItem(ModFluids.HONEY_FLUID,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).durability(500)));
 
 
 
