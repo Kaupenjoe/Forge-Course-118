@@ -2,6 +2,7 @@ package net.kaupenjoe.mccourse.world;
 
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.world.gen.ModFlowerGeneration;
+import net.kaupenjoe.mccourse.world.gen.ModOreGeneration;
 import net.kaupenjoe.mccourse.world.gen.ModTreeGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,6 +12,8 @@ import net.minecraftforge.fml.common.Mod;
 public class ModWorldEvents {
     @SubscribeEvent
     public static void biomeLoadingEvent(final BiomeLoadingEvent event) {
+        ModOreGeneration.generateOres(event);
+
         ModTreeGeneration.generateTrees(event);
         ModFlowerGeneration.generateFlowers(event);
     }
