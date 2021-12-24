@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mccourse:block/cherry_blossom_sapling"
+  }
+}
