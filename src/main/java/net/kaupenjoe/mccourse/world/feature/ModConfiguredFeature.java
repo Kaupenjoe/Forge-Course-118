@@ -1,6 +1,7 @@
 package net.kaupenjoe.mccourse.world.feature;
 
 import net.kaupenjoe.mccourse.block.ModBlocks;
+import net.kaupenjoe.mccourse.config.MCCourseCommonConfigs;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.util.valueproviders.ConstantInt;
@@ -44,7 +45,8 @@ public class ModConfiguredFeature {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_COBALT_ORE.get().defaultBlockState()));
 
     public static final ConfiguredFeature<?, ?> COBALT_ORE = FeatureUtils.register("cobalt_ore",
-            Feature.ORE.configured(new OreConfiguration(OVERWORLD_COBALT_ORES, 9)));
+            Feature.ORE.configured(new OreConfiguration(OVERWORLD_COBALT_ORES,
+                    MCCourseCommonConfigs.COBALT_ORE_VEIN_SIZE.get())));
 
 
 }
