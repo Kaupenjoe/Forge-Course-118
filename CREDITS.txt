@@ -11,3 +11,6 @@ https://www.curseforge.com/members/platinumg17/projects
 
 Custom Menu Screen by Yoruniii (https://creativecommons.org/licenses/by-sa/4.0/):
 https://www.fiverr.com/yoruniii/make-and-animate-3d-model-in-blockbench
+
+BetterBrewingRecipe Class by CAS-ual-TY from https://github.com/CAS-ual-TY/Extra-Potions (GPL-3.0 License)
+ https://github.com/CAS-ual-TY/Extra-Potions/blob/main/LICENSE
