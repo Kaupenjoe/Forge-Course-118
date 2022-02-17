@@ -5,6 +5,7 @@ import net.kaupenjoe.mccourse.block.ModWoodTypes;
 import net.kaupenjoe.mccourse.block.entity.ModBlockEntities;
 import net.kaupenjoe.mccourse.config.MCCourseClientConfigs;
 import net.kaupenjoe.mccourse.config.MCCourseCommonConfigs;
+import net.kaupenjoe.mccourse.effect.ModEffects;
 import net.kaupenjoe.mccourse.enchantment.ModEnchantments;
 import net.kaupenjoe.mccourse.fluid.ModFluids;
 import net.kaupenjoe.mccourse.item.ModItems;
@@ -70,6 +71,7 @@ public class MCCourseMod {
         ModMenuTypes.register(eventBus);
 
         ModRecipes.register(eventBus);
+        ModEffects.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
