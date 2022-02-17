@@ -8,3 +8,6 @@ If you use those textures, add this file to your repository and add this to your
 
 Cobalt Blaster & Paintings by PlatinumG17 (https://creativecommons.org/licenses/by-sa/4.0/):
 https://www.curseforge.com/members/platinumg17/projects
+
+Custom Menu Screen by Yoruniii (https://creativecommons.org/licenses/by-sa/4.0/):
+https://www.fiverr.com/yoruniii/make-and-animate-3d-model-in-blockbench
