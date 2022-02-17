@@ -28,6 +28,10 @@
   "item.mccourse.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.mccourse.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
+  "item.minecraft.potion.effect.freeze_potion": "Freeze Potion",
+  "item.minecraft.splash_potion.effect.freeze_potion": "Splash Potion of Freeze",
+  "item.minecraft.lingering_potion.effect.freeze_potion": "Lingering Potion of Freeze",
+
   "block.mccourse.cobalt_block": "Cobalt Block",
   "block.mccourse.cobalt_ore": "Cobalt Ore",
   "block.mccourse.raw_cobalt_block": "Raw Cobalt Block",
@@ -66,5 +70,6 @@
   "tooltip.mccourse.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information!",
   "tooltip.block.speedy_block": "It gets REALLY speedy!",
 
-  "enchantment.mccourse.lightning_striker": "Lightning Striker"
+  "enchantment.mccourse.lightning_striker": "Lightning Striker",
+  "effect.mccourse.freeze": "Freeze"
 }
