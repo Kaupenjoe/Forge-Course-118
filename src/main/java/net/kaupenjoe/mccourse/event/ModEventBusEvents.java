@@ -1,11 +1,14 @@
 package net.kaupenjoe.mccourse.event;
 
 import net.kaupenjoe.mccourse.MCCourseMod;
+import net.kaupenjoe.mccourse.entity.ModEntityTypes;
+import net.kaupenjoe.mccourse.entity.custom.RaccoonEntity;
 import net.kaupenjoe.mccourse.event.loot.DowsingRodInIglooAdditionModifier;
 import net.kaupenjoe.mccourse.event.loot.TurnipSeedsFromGrassAdditionModifier;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -22,5 +25,10 @@ public class ModEventBusEvents {
                 new DowsingRodInIglooAdditionModifier.Serializer().setRegistryName
                         (new ResourceLocation(MCCourseMod.MOD_ID,"dowsing_rod_in_igloo"))
         );
+    }
+
+    @SubscribeEvent
+    public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
+        event.put(ModEntityTypes.RACCOON.get(), RaccoonEntity.setAttributes());
     }
 }

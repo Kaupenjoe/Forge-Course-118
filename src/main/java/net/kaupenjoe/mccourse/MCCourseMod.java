@@ -7,6 +7,8 @@ import net.kaupenjoe.mccourse.config.MCCourseClientConfigs;
 import net.kaupenjoe.mccourse.config.MCCourseCommonConfigs;
 import net.kaupenjoe.mccourse.effect.ModEffects;
 import net.kaupenjoe.mccourse.enchantment.ModEnchantments;
+import net.kaupenjoe.mccourse.entity.ModEntityTypes;
+import net.kaupenjoe.mccourse.entity.client.RaccoonRenderer;
 import net.kaupenjoe.mccourse.fluid.ModFluids;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.kaupenjoe.mccourse.painting.ModPaintings;
@@ -25,6 +27,7 @@ import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -78,6 +81,7 @@ public class MCCourseMod {
         ModEffects.register(eventBus);
 
         ModPotions.register(eventBus);
+        ModEntityTypes.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
@@ -113,6 +117,8 @@ public class MCCourseMod {
         MenuScreens.register(ModMenuTypes.COBALT_BLASTER_MENU.get(), CobaltBlasterScreen::new);
 
         WoodType.register(ModWoodTypes.CHERRY_BLOSSOM);
+
+        EntityRenderers.register(ModEntityTypes.RACCOON.get(), RaccoonRenderer::new);
     }
 
     private void setup(final FMLCommonSetupEvent event) {

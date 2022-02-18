@@ -2,11 +2,13 @@ package net.kaupenjoe.mccourse.item;
 
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
+import net.kaupenjoe.mccourse.entity.ModEntityTypes;
 import net.kaupenjoe.mccourse.fluid.ModFluids;
 import net.kaupenjoe.mccourse.item.custom.*;
 import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -104,6 +106,10 @@ public class ModItems {
     public static final RegistryObject<Item> MAGIC_DUST = ITEMS.register("magic_dust",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
+
+    public static final RegistryObject<ForgeSpawnEggItem> RACCOON_SPAWN_EGG = ITEMS.register("raccoon_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.RACCOON,0x948e8d, 0x3b3635,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
 
     public static void register(IEventBus eventBus) {
