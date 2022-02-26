@@ -3,6 +3,7 @@ package net.kaupenjoe.mccourse.event;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.entity.ModEntityTypes;
 import net.kaupenjoe.mccourse.entity.custom.RaccoonEntity;
+import net.kaupenjoe.mccourse.entity.custom.TigerEntity;
 import net.kaupenjoe.mccourse.event.loot.DowsingRodInIglooAdditionModifier;
 import net.kaupenjoe.mccourse.event.loot.TurnipSeedsFromGrassAdditionModifier;
 import net.minecraft.resources.ResourceLocation;
@@ -30,5 +31,6 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(ModEntityTypes.RACCOON.get(), RaccoonEntity.setAttributes());
+        event.put(ModEntityTypes.TIGER.get(), TigerEntity.setAttributes());
     }
 }

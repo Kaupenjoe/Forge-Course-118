@@ -9,6 +9,7 @@ import net.kaupenjoe.mccourse.effect.ModEffects;
 import net.kaupenjoe.mccourse.enchantment.ModEnchantments;
 import net.kaupenjoe.mccourse.entity.ModEntityTypes;
 import net.kaupenjoe.mccourse.entity.client.RaccoonRenderer;
+import net.kaupenjoe.mccourse.entity.client.TigerRenderer;
 import net.kaupenjoe.mccourse.fluid.ModFluids;
 import net.kaupenjoe.mccourse.item.ModItems;
 import net.kaupenjoe.mccourse.painting.ModPaintings;
@@ -119,6 +120,7 @@ public class MCCourseMod {
         WoodType.register(ModWoodTypes.CHERRY_BLOSSOM);
 
         EntityRenderers.register(ModEntityTypes.RACCOON.get(), RaccoonRenderer::new);
+        EntityRenderers.register(ModEntityTypes.TIGER.get(), TigerRenderer::new);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
