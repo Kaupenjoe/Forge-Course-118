@@ -8,6 +8,7 @@ import net.kaupenjoe.mccourse.config.MCCourseCommonConfigs;
 import net.kaupenjoe.mccourse.effect.ModEffects;
 import net.kaupenjoe.mccourse.enchantment.ModEnchantments;
 import net.kaupenjoe.mccourse.entity.ModEntityTypes;
+import net.kaupenjoe.mccourse.entity.client.ModBoatRenderer;
 import net.kaupenjoe.mccourse.entity.client.RaccoonRenderer;
 import net.kaupenjoe.mccourse.entity.client.TigerRenderer;
 import net.kaupenjoe.mccourse.fluid.ModFluids;
@@ -121,6 +122,8 @@ public class MCCourseMod {
 
         EntityRenderers.register(ModEntityTypes.RACCOON.get(), RaccoonRenderer::new);
         EntityRenderers.register(ModEntityTypes.TIGER.get(), TigerRenderer::new);
+
+        EntityRenderers.register(ModEntityTypes.BOAT_ENTITY.get(), ModBoatRenderer::new);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
