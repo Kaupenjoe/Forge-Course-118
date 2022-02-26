@@ -1,6 +1,7 @@
 package net.kaupenjoe.mccourse.world;
 
 import net.kaupenjoe.mccourse.MCCourseMod;
+import net.kaupenjoe.mccourse.world.gen.ModEntityGeneration;
 import net.kaupenjoe.mccourse.world.gen.ModFlowerGeneration;
 import net.kaupenjoe.mccourse.world.gen.ModOreGeneration;
 import net.kaupenjoe.mccourse.world.gen.ModTreeGeneration;
@@ -16,5 +17,7 @@ public class ModWorldEvents {
 
         ModTreeGeneration.generateTrees(event);
         ModFlowerGeneration.generateFlowers(event);
+
+        ModEntityGeneration.onEntitySpawn(event);
     }
 }
