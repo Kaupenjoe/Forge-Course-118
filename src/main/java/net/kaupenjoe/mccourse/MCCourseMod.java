@@ -53,6 +53,7 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 import java.util.stream.Collectors;
 
@@ -84,6 +85,8 @@ public class MCCourseMod {
 
         ModPotions.register(eventBus);
         ModEntityTypes.register(eventBus);
+
+        GeckoLib.initialize();
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);

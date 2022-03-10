@@ -17,6 +17,5 @@ public class ModRecipes {
 
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);
-        Registry.register(Registry.RECIPE_TYPE, CobaltBlasterRecipe.Type.ID, CobaltBlasterRecipe.Type.INSTANCE);
     }
 }

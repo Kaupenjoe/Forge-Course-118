@@ -6,7 +6,10 @@ import net.kaupenjoe.mccourse.entity.custom.RaccoonEntity;
 import net.kaupenjoe.mccourse.entity.custom.TigerEntity;
 import net.kaupenjoe.mccourse.event.loot.DowsingRodInIglooAdditionModifier;
 import net.kaupenjoe.mccourse.event.loot.TurnipSeedsFromGrassAdditionModifier;
+import net.kaupenjoe.mccourse.recipe.CobaltBlasterRecipe;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -32,5 +35,10 @@ public class ModEventBusEvents {
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(ModEntityTypes.RACCOON.get(), RaccoonEntity.setAttributes());
         event.put(ModEntityTypes.TIGER.get(), TigerEntity.setAttributes());
+    }
+
+    @SubscribeEvent
+    public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event) {
+        Registry.register(Registry.RECIPE_TYPE, CobaltBlasterRecipe.Type.ID, CobaltBlasterRecipe.Type.INSTANCE);
     }
 }
