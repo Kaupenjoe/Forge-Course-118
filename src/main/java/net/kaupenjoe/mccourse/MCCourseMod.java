@@ -22,6 +22,7 @@ import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.kaupenjoe.mccourse.util.BetterBrewingRecipe;
 import net.kaupenjoe.mccourse.util.ModItemProperties;
 import net.kaupenjoe.mccourse.util.ModTags;
+import net.kaupenjoe.mccourse.villager.ModVillagers;
 import net.kaupenjoe.mccourse.world.structure.ModStructures;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -86,7 +87,9 @@ public class MCCourseMod {
 
         ModPotions.register(eventBus);
         ModEntityTypes.register(eventBus);
+
         ModStructures.register(eventBus);
+        ModVillagers.register(eventBus);
 
         GeckoLib.initialize();
 
@@ -144,6 +147,7 @@ public class MCCourseMod {
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
                     ModItems.COBALT_INGOT.get(), ModPotions.FREEZE_POTION.get()));
 
+            ModVillagers.registerPOIs();
         });
     }
 }
