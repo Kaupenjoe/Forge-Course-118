@@ -23,6 +23,11 @@ public class ModBlockEntities {
                             ModBlocks.CHERRY_BLOSSOM_WALL_SIGN.get(),
                             ModBlocks.CHERRY_BLOSSOM_SIGN.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<PedestalBlockEntity>> PEDESTAL =
+            BLOCK_ENTITIES.register("pedestal", () ->
+                    BlockEntityType.Builder.of(PedestalBlockEntity::new,
+                            ModBlocks.PEDESTAL.get()).build(null));
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }
