@@ -1,13 +1,11 @@
 package net.kaupenjoe.mccourse.block.entity;
 
-import net.kaupenjoe.mccourse.item.ModItems;
 import net.kaupenjoe.mccourse.recipe.CobaltBlasterRecipe;
 import net.kaupenjoe.mccourse.screen.CobaltBlasterMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -77,7 +75,7 @@ public class CobaltBlasterBlockEntity extends BlockEntity implements MenuProvide
 
     @Override
     public Component getDisplayName() {
-        return new TextComponent("Cobalt Blaster");
+        return Component.literal("Cobalt Blaster");
     }
 
     @Nullable

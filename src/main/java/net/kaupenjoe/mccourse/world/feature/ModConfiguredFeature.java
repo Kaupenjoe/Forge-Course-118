@@ -55,7 +55,7 @@ public class ModConfiguredFeature {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_COBALT_ORE.get().defaultBlockState()));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> COBALT_ORE = FeatureUtils.register("cobalt_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_COBALT_ORES, MCCourseCommonConfigs.COBALT_ORE_VEIN_SIZE.get()));
+            Feature.ORE, new OreConfiguration(OVERWORLD_COBALT_ORES, 9));
 
 
     public static final Holder<ConfiguredFeature<GeodeConfiguration, ?>> COBALT_GEODE =

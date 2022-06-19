@@ -3,8 +3,6 @@ package net.kaupenjoe.mccourse.item;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.entity.ModEntityTypes;
-import net.kaupenjoe.mccourse.entity.custom.ModBoatEntity;
-import net.kaupenjoe.mccourse.fluid.ModFluids;
 import net.kaupenjoe.mccourse.item.custom.*;
 import net.kaupenjoe.mccourse.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -94,9 +92,9 @@ public class ModItems {
             () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).durability(500)));
 
 
-    public static final RegistryObject<Item> HONEY_BUCKET = ITEMS.register("honey_bucket",
-            () -> new BucketItem(ModFluids.HONEY_FLUID,
-                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).durability(500)));
+    // public static final RegistryObject<Item> HONEY_BUCKET = ITEMS.register("honey_bucket",
+    //         () -> new BucketItem(ModFluids.HONEY_FLUID,
+    //                 new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).durability(500)));
 
 
     public static final RegistryObject<Item> CHERRY_BLOSSOM_SIGN_ITEM = ITEMS.register("cherry_blossom_sign",
@@ -117,8 +115,8 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
 
-    public static final RegistryObject<Item> CHERRY_BLOSSOM_BOAT = ITEMS.register("cherry_blossom_boat",
-            () -> new ModBoatItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB), ModBoatEntity.Type.CHERRY_BLOSSOM));
+    // public static final RegistryObject<Item> CHERRY_BLOSSOM_BOAT = ITEMS.register("cherry_blossom_boat",
+    //         () -> new ModBoatItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB), ModBoatEntity.Type.CHERRY_BLOSSOM));
 
 
     public static void register(IEventBus eventBus) {

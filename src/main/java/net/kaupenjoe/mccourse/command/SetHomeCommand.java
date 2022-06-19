@@ -6,7 +6,7 @@ import net.kaupenjoe.mccourse.MCCourseMod;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 
 public class SetHomeCommand {
@@ -24,7 +24,7 @@ public class SetHomeCommand {
         player.getPersistentData().putIntArray(MCCourseMod.MOD_ID + "homepos",
                 new int[]{ playerPos.getX(), playerPos.getY(), playerPos.getZ() });
 
-        source.sendSuccess(new TextComponent("Set Home at " + pos), true);
+        source.sendSuccess(Component.literal("Set Home at " + pos), true);
         return 1;
     }
 }
